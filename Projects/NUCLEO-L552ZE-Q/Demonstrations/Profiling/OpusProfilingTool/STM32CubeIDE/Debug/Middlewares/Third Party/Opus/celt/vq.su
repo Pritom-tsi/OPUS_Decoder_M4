@@ -1,0 +1,8 @@
+vq.c:47:13:exp_rotation1	32	static
+vq.c:74:6:exp_rotation.part.2.constprop	72	static
+vq.c:74:6:exp_rotation	80	static
+vq.c:165:12:op_pvq_search_c	96	dynamic,ignoring_inline_asm
+vq.c:330:10:alg_quant	112	dynamic
+vq.c:363:10:alg_unquant	64	dynamic
+vq.c:383:6:renormalise_vector	24	static
+vq.c:410:5:stereo_itheta	24	static

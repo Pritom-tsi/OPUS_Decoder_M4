@@ -1,0 +1,6 @@
+analysis.c:161:19:downmix_and_resample	88	dynamic,ignoring_inline_asm
+analysis.c:444:13:tonality_analysis.isra.1	11576	static
+analysis.c:215:6:tonality_analysis_init	4	static
+analysis.c:224:6:tonality_analysis_reset	0	static
+analysis.c:231:6:tonality_get_info	36	static
+analysis.c:953:6:run_analysis	72	static

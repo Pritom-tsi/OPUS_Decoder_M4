@@ -1,0 +1,15 @@
+opus_decoder.c:188:13:smooth_fade	36	static
+opus_decoder.c:220:12:opus_decode_frame	240	dynamic
+opus_decoder.c:102:5:opus_decoder_get_size	16	static
+opus_decoder.c:116:5:opus_decoder_init	32	static
+opus_decoder.c:159:14:opus_decoder_create	32	static
+opus_decoder.c:626:5:opus_decode_native	232	dynamic
+opus_decoder.c:742:5:opus_decode	232	dynamic
+opus_decoder.c:751:5:opus_decode_float	248	dynamic
+opus_decoder.c:833:5:opus_decoder_ctl	28	static
+opus_decoder.c:966:6:opus_decoder_destroy	0	static
+opus_decoder.c:972:5:opus_packet_get_bandwidth	0	static
+opus_decoder.c:990:5:opus_packet_get_nb_channels	0	static
+opus_decoder.c:995:5:opus_packet_get_nb_frames	0	static
+opus_decoder.c:1011:5:opus_packet_get_nb_samples	16	static
+opus_decoder.c:1028:5:opus_decoder_get_nb_samples	16	static

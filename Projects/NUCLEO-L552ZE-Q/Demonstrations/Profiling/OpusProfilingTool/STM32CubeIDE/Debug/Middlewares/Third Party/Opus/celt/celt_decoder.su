@@ -1,0 +1,7 @@
+celt_decoder.c:260:6:deemphasis	88	dynamic,ignoring_inline_asm
+celt_decoder.c:363:6:celt_synthesis	128	dynamic
+celt_decoder.c:496:13:celt_decode_lost	2488	dynamic,ignoring_inline_asm
+celt_decoder.c:144:5:celt_decoder_get_size	8	static
+celt_decoder.c:814:5:celt_decode_with_ec	440	dynamic
+celt_decoder.c:1247:5:opus_custom_decoder_ctl	44	static
+celt_decoder.c:176:5:celt_decoder_init	24	static

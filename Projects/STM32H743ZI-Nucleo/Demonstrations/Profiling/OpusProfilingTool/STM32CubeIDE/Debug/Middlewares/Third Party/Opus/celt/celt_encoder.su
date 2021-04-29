@@ -1,0 +1,7 @@
+celt_encoder.c:970:19:dynalloc_analysis	176	dynamic
+celt_encoder.c:450:13:compute_mdcts	96	static
+celt_encoder.c:130:5:celt_encoder_get_size	8	static
+celt_encoder.c:496:6:celt_preemphasis	48	static
+celt_encoder.c:1408:5:celt_encode_with_ec	864	dynamic,ignoring_inline_asm
+celt_encoder.c:2409:5:opus_custom_encoder_ctl	44	static
+celt_encoder.c:207:5:celt_encoder_init	32	static

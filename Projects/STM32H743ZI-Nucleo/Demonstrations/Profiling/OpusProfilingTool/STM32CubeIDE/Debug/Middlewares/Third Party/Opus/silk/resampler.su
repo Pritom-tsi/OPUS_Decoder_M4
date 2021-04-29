@@ -1,0 +1,2 @@
+resampler.c:78:10:silk_resampler_init	24	static,ignoring_inline_asm
+resampler.c:174:10:silk_resampler	32	static

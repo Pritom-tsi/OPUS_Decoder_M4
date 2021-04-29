@@ -1,0 +1,4 @@
+uart_protocol_interface.c:81:6:UART_SendMsg	8	static
+uart_protocol_interface.c:98:5:UART_ReceivedMSG	24	static
+uart_protocol_interface.c:122:6:USARTConfig	16	static
+uart_protocol_interface.c:158:6:HAL_UART_MspInit	232	static

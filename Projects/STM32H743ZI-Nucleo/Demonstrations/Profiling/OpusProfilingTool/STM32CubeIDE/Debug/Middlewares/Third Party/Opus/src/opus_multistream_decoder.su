@@ -1,0 +1,10 @@
+opus_multistream_decoder.c:536:5:opus_multistream_decoder_ctl.constprop	20	static
+opus_multistream_decoder.c:53:12:opus_multistream_decoder_get_size	16	static
+opus_multistream_decoder.c:66:5:opus_multistream_decoder_init	32	static
+opus_multistream_decoder.c:113:16:opus_multistream_decoder_create	40	static
+opus_multistream_decoder.c:178:5:opus_multistream_decode_native	224	dynamic
+opus_multistream_decoder.c:371:5:opus_multistream_decode	224	dynamic
+opus_multistream_decoder.c:385:5:opus_multistream_decode_float	232	dynamic
+opus_multistream_decoder.c:416:5:opus_multistream_decoder_ctl_va_list	40	static
+opus_multistream_decoder.c:536:5:opus_multistream_decoder_ctl	44	static
+opus_multistream_decoder.c:546:6:opus_multistream_decoder_destroy	0	static

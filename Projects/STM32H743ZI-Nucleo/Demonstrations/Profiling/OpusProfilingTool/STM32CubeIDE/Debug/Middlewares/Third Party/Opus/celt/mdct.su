@@ -1,0 +1,2 @@
+mdct.c:119:6:clt_mdct_forward_c	136	dynamic,ignoring_inline_asm
+mdct.c:242:6:clt_mdct_backward_c	80	static,ignoring_inline_asm

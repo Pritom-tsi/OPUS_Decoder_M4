@@ -1,0 +1,16 @@
+opus_interface.c:60:10:ENC_Opus_getMemorySize	0	static
+opus_interface.c:72:10:DEC_Opus_getMemorySize	0	static
+opus_interface.c:85:13:ENC_Opus_Init	24	static
+opus_interface.c:126:6:ENC_Opus_Deinit	8	static
+opus_interface.c:139:9:ENC_Opus_IsConfigured	0	static
+opus_interface.c:150:13:DEC_Opus_Init	16	static
+opus_interface.c:173:6:DEC_Opus_Deinit	8	static
+opus_interface.c:186:9:DEC_Opus_IsConfigured	0	static
+opus_interface.c:197:13:ENC_Opus_Set_Bitrate	8	static
+opus_interface.c:214:13:ENC_Opus_Set_CBR	8	static
+opus_interface.c:231:13:ENC_Opus_Set_VBR	8	static
+opus_interface.c:249:13:ENC_Opus_Set_Complexity	8	static
+opus_interface.c:266:13:ENC_Opus_Force_SILKmode	8	static
+opus_interface.c:282:13:ENC_Opus_Force_CELTmode	8	static
+opus_interface.c:299:5:ENC_Opus_Encode	24	static
+opus_interface.c:311:5:DEC_Opus_Decode	24	static

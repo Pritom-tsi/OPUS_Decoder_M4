@@ -1,0 +1,16 @@
+STCmdP.c:224:13:STCmdP_WMsg_Received	0	static
+STCmdP.c:202:10:STCmdP_Extract_WaitingMsg	24	static
+STCmdP.c:118:10:STCmdP_Extract_Msg	48	static
+STCmdP.c:237:10:STCmdP_Prepare_Msg	20	static
+STCmdP.c:252:10:STCmdP_Prepare_WaitingMsg	28	static
+STCmdP.c:293:5:STCmdP_ByteStuffCopyByte	0	static
+STCmdP.c:317:5:STCmdP_ByteStuffCopy	20	static
+STCmdP.c:337:5:STCmdP_ReverseByteStuffCopyByte	0	static
+STCmdP.c:367:5:STCmdP_ReverseByteStuffCopyByte2	0	static
+STCmdP.c:396:5:STCmdP_ReverseByteStuffCopy	8	static
+STCmdP.c:465:6:STCmdP_CHK_ComputeAndAdd	16	static
+STCmdP.c:484:5:STCmdP_CHK_CheckAndRemove	20	static
+STCmdP.c:522:6:STCmdP_Serialize	0	static
+STCmdP.c:538:10:STCmdP_Deserialize	0	static
+STCmdP.c:557:6:STCmdP_Serialize_s32	0	static
+STCmdP.c:573:9:STCmdP_Deserialize_s32	0	static

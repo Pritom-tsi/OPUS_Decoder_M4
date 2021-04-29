@@ -1,0 +1,5 @@
+opt_cmd_handlers.c:47:19:Handle_CMD_InitOpusEncoder	24	static
+opt_cmd_handlers.c:118:19:Handle_CMD_InitOpusDecoder	24	static
+opt_cmd_handlers.c:152:19:Handle_CMD_ResetOpus	8	static
+opt_cmd_handlers.c:176:19:Handle_CMD_EncDec_File_Request	32	static,ignoring_inline_asm
+opt_cmd_handlers.c:285:19:Handle_CMD_EncDec_NoFile_Request	24	static,ignoring_inline_asm

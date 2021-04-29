@@ -1,0 +1,6 @@
+mathops.c:43:10:isqrt32	12	static
+mathops.c:70:12:frac_div32	16	static,ignoring_inline_asm
+mathops.c:91:12:celt_rsqrt_norm	4	static
+mathops.c:119:12:celt_sqrt	8	static
+mathops.c:157:12:celt_cos_norm	12	static
+mathops.c:181:12:celt_rcp	8	static
