@@ -65,8 +65,8 @@ all: main-build
 main-build: OpusProfilingTool.elf secondary-outputs
 
 # Tool invocations
-OpusProfilingTool.elf: $(OBJS) $(USER_OBJS) D:\opus\ all\STM32CubeExpansion_OPUS_V1.0.0\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\STM32CubeIDE\STM32L552ZETX_FLASH.ld
-	arm-none-eabi-gcc -o "OpusProfilingTool.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"D:\opus all\STM32CubeExpansion_OPUS_V1.0.0\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\STM32CubeIDE\STM32L552ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OpusProfilingTool.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+OpusProfilingTool.elf: $(OBJS) $(USER_OBJS) D:\opus\ all\OPUS_MCU_Decoder\OPUS_Decoder_M4\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\STM32CubeIDE\STM32L552ZETX_FLASH.ld
+	arm-none-eabi-gcc -o "OpusProfilingTool.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"D:\opus all\OPUS_MCU_Decoder\OPUS_Decoder_M4\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\STM32CubeIDE\STM32L552ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OpusProfilingTool.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

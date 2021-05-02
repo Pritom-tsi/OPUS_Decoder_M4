@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/silk/HP_variable_cutoff.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/HP_variable_cutoff.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/HP_variable_cutoff.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h \
@@ -45,7 +45,7 @@ Middlewares/Third Party/Opus/silk/HP_variable_cutoff.o: \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/PLC.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/debug.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/fixed/arm/warped_autocorrelation_FIX_arm.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/tuning_parameters.h
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/tuning_parameters.h
 
 ../../Inc/config.h:
 
@@ -137,4 +137,4 @@ Middlewares/Third Party/Opus/silk/HP_variable_cutoff.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/silk/fixed/arm/warped_autocorrelation_FIX_arm.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/tuning_parameters.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/tuning_parameters.h:

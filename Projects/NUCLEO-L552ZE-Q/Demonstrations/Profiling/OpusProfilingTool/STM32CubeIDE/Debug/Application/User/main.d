@@ -1,5 +1,5 @@
 Application/User/main.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/main.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/main.c \
  ../../Inc/cube_hal.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal.h \
  ../../Inc/stm32l5xx_hal_conf.h \
@@ -34,9 +34,7 @@ Application/User/main.o: \
  ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h \
  ../../Inc/stm32l5xx_nucleo_conf.h \
  ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h \
- ../../Inc/stm32l5xx_hal_conf.h ../../Inc/stcmdp_manager.h \
- ../../../../../../../Middlewares/ST/STCmdP/inc/STCmdP.h \
- ../../Inc/uart_protocol_interface.h ../../Inc/cube_hal.h
+ ../../Inc/stm32l5xx_hal_conf.h
 
 ../../Inc/cube_hal.h:
 
@@ -107,11 +105,3 @@ Application/User/main.o: \
 ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h:
 
 ../../Inc/stm32l5xx_hal_conf.h:
-
-../../Inc/stcmdp_manager.h:
-
-../../../../../../../Middlewares/ST/STCmdP/inc/STCmdP.h:
-
-../../Inc/uart_protocol_interface.h:
-
-../../Inc/cube_hal.h:

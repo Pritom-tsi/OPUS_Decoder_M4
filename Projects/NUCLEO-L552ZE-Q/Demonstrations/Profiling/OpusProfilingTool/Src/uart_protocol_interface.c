@@ -1,4 +1,5 @@
-/**
+/*
+*
   ******************************************************************************
   * @file    uart_protocol_interface.c
   * @author  SRA
@@ -16,13 +17,13 @@
   *                             www.st.com/SLA0094
   *
   ******************************************************************************
-  */
 
-/*Include --------------------------------------------------------------------*/
+
+Include --------------------------------------------------------------------
 #include "uart_protocol_interface.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private defines -----------------------------------------------------------*/
+ Private typedef -----------------------------------------------------------
+ Private defines -----------------------------------------------------------
 #define UART_RX_BUFFER_SIZE           (2*12288)
 #define UART_TX_BUFFER_SIZE           (2*12288)
 
@@ -44,8 +45,8 @@
 #define USARTx_RX_AF                     GPIO_AF8_LPUART1
 #define USARTx_IRQn                      LPUART1_IRQn
  
-/* Private macros ------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
+ Private macros ------------------------------------------------------------
+ Private variables ---------------------------------------------------------
 UART_HandleTypeDef UartHandle;
 DMA_HandleTypeDef hdma_rx;
 DMA_HandleTypeDef hdma_tx;
@@ -56,28 +57,28 @@ uint16_t UART_NewByte_idx = 0;
 volatile uint8_t UART_RxBuffer[UART_RX_BUFFER_SIZE];
 volatile uint8_t UART_TxBuffer[UART_TX_BUFFER_SIZE];
 
-/* Global variables ----------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
+ Global variables ----------------------------------------------------------
+ Private function prototypes -----------------------------------------------
 static void USART_DMA_Configuration(void);
 static void UART_PROTOCOL_SendData(uint16_t msg_size);
 static uint16_t UART_PROTOCOL_CheckForNewData(void);
 static uint8_t* UART_PROTOCOL_GetTxBuffer(void);
 static uint8_t* UART_PROTOCOL_GetRxBuffer(void);
 
-/**
+*
   * @}
-  */
 
-/** @defgroup UART_PROTOCOL_INTERFACE_Exported_Functions UART_PROTOCOL_INTERFACE_Exported_Functions
+
+* @defgroup UART_PROTOCOL_INTERFACE_Exported_Functions UART_PROTOCOL_INTERFACE_Exported_Functions
 * @{ 
-*/
 
-/* Functions Definition ------------------------------------------------------*/
-/**
+
+ Functions Definition ------------------------------------------------------
+*
   * @brief  Send a Msg via UART
   * @param  Msg pointer to the msg
   * @retval None
-  */
+
 void UART_SendMsg(TMsg *Msg)
 {  
   uint8_t *UART_TxBuffer;
@@ -90,11 +91,11 @@ void UART_SendMsg(TMsg *Msg)
   UART_PROTOCOL_SendData(CountOut);
 }
 
-/**
+*
   * @brief  Check if a message is received via UART.
   * @param  Msg pointer to the msg
   * @retval 1 if a msg is been received 0 otherwise
-  */
+
 int UART_ReceivedMSG(TMsg *Msg)
 {
   uint8_t *UART_RxBuffer;
@@ -114,11 +115,11 @@ int UART_ReceivedMSG(TMsg *Msg)
   return 0;
 }
 
-/**
+*
   * @brief  UART configuration
   * @param  None
   * @retval None
-  */
+
 void USARTConfig(void)
 {
   UartHandle.Instance                    = USARTx;
@@ -146,15 +147,15 @@ void USARTConfig(void)
     while(1);
   }
   
-  /* Enable the DMA transfer for the receiver request  */
+   Enable the DMA transfer for the receiver request
   HAL_UART_Receive_DMA(&UartHandle, (uint8_t*)UART_RxBuffer, UART_RX_BUFFER_SIZE);
 }
 
-/**
+*
  * @brief  UART configuration
  * @param  None
  * @retval None
- */
+
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 {
   GPIO_InitTypeDef GPIO_InitStruct;
@@ -169,7 +170,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
     
   USARTx_CLK_ENABLE();
   
-  /* Enable GPIO TX/RX clock */
+   Enable GPIO TX/RX clock
   USARTx_TX_GPIO_CLK_ENABLE();
   USARTx_RX_GPIO_CLK_ENABLE();
   HAL_PWREx_EnableVddIO2();
@@ -178,7 +179,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
   
   DMAx_CLK_ENABLE();
   
-  /* UART TX GPIO pin configuration  */
+   UART TX GPIO pin configuration
   GPIO_InitStruct.Pin       = USARTx_TX_PIN;
   GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull      = GPIO_PULLUP;
@@ -187,7 +188,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
   HAL_GPIO_Init(USARTx_TX_GPIO_PORT, &GPIO_InitStruct);
 
-  /* UART RX GPIO pin configuration  */
+   UART RX GPIO pin configuration
   GPIO_InitStruct.Pin = USARTx_RX_PIN;
   GPIO_InitStruct.Alternate = USARTx_RX_AF;
 
@@ -195,16 +196,16 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
   USART_DMA_Configuration();  
     
-  /* NVIC for USART, to catch the TX complete */
+   NVIC for USART, to catch the TX complete
   HAL_NVIC_SetPriority(USARTx_IRQn, 0, 1);
   HAL_NVIC_EnableIRQ(USARTx_IRQn);
 }
 
-/**
+*
  * @brief  Configure DMA for transmitter and receiver
  * @param  None
  * @retval None
- */
+
 static void USART_DMA_Configuration(void)
 {  
   hdma_tx.Instance                 = DMA1_Channel1;
@@ -217,13 +218,13 @@ static void USART_DMA_Configuration(void)
   hdma_tx.Init.Mode                = DMA_NORMAL;
   hdma_tx.Init.Priority            = DMA_PRIORITY_MEDIUM;
   
-  /* NVIC configuration for DMA transfer complete interrupt */
+   NVIC configuration for DMA transfer complete interrupt
   HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 10, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
   
   HAL_DMA_Init(&hdma_tx);
   
-  /* Associate the initialized DMA handle to the the UART handle */
+   Associate the initialized DMA handle to the the UART handle
   __HAL_LINKDMA(&UartHandle, hdmatx, hdma_tx);
   
   hdma_rx.Instance                 = DMA1_Channel2;
@@ -238,25 +239,25 @@ static void USART_DMA_Configuration(void)
 
   HAL_DMA_Init(&hdma_rx);
     
-  /* Associate the initialized DMA handle to the the UART handle */
+   Associate the initialized DMA handle to the the UART handle
   __HAL_LINKDMA(&UartHandle, hdmarx, hdma_rx);
 }
 
-/**
+*
  * @brief  Check if new byte has been tranfered by the DMA
  * @param  None
  * @retval Number of byte received
- */
+
 static uint16_t UART_PROTOCOL_CheckForNewData(void)
 {
   return (uint16_t)( UartHandle.RxXferSize - ((uint16_t)__HAL_DMA_GET_COUNTER(UartHandle.hdmarx)));
 }
 
-/**
+*
  * @brief  Send data via UART
  * @param  msg_size: number of byte to be sent
  * @retval None
- */
+
 static void UART_PROTOCOL_SendData(uint16_t msg_size)
 {
   UartHandle.TxXferSize = msg_size;
@@ -264,21 +265,21 @@ static void UART_PROTOCOL_SendData(uint16_t msg_size)
   HAL_UART_Transmit_DMA(&UartHandle, UartHandle.pTxBuffPtr, msg_size);
 }
 	
-/**
+*
  * @brief  Get pointer to the UART RX buffer
  * @param  None
  * @retval pointer to the UART RX buffer
- */
+
 static uint8_t* UART_PROTOCOL_GetRxBuffer(void)
 {
   return (uint8_t *)UART_RxBuffer;
 }
 
-/**
+*
  * @brief  Get pointer to the UART TX buffer
  * @param  None
  * @retval pointer to the UART TX buffer
- */
+
 static uint8_t* UART_PROTOCOL_GetTxBuffer(void)
 {
   return (uint8_t *)UART_TxBuffer;
@@ -286,4 +287,5 @@ static uint8_t* UART_PROTOCOL_GetTxBuffer(void)
 
 
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+*********************** (C) COPYRIGHT STMicroelectronics *****END OF FILE***
+*/

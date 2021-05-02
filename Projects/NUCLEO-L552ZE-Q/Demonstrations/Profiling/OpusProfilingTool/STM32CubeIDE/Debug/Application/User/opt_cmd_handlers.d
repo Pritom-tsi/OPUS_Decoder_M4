@@ -1,5 +1,5 @@
 Application/User/opt_cmd_handlers.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/opt_cmd_handlers.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/opt_cmd_handlers.c \
  ../../Inc/opt_cmd_handlers.h \
  ../../../../../../../Middlewares/ST/STCmdP/inc/STCmdP.h \
  ../../Inc/cube_hal.h \

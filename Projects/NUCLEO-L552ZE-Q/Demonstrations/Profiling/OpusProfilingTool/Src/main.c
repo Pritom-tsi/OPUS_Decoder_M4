@@ -20,8 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "cube_hal.h"
-#include "stcmdp_manager.h"
-#include "uart_protocol_interface.h"
+//#include "stcmdp_manager.h" // commented out by Pritom
+//#include "uart_protocol_interface.h"// commented out by Pritom
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private defines -----------------------------------------------------------*/
@@ -38,6 +38,7 @@ static void ICACHE_Init(void);
  * @param  None.
  * @retval None.
  */
+//uint32_t led_toggle_count = 0;//commented out by Pritom
 int main(void)
 {
   /* STM32Cube HAL library initialization:
@@ -60,17 +61,17 @@ int main(void)
   BSP_LED_Init(LED1);
 
   /* Configure UART */
-  USARTConfig();
+  //USARTConfig(); //commented out by Pritom
 
   while (1)
   {
-    STCmdP_manager();
-    
-    if(led_toggle_count > 200)
+   // STCmdP_manager();
+ //commented out by Pritom
+  /*  if(led_toggle_count > 200)
     {   
       led_toggle_count = 0;
       BSP_LED_Toggle(LED1);
-    }
+    }*/
   }
 }
 

@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/silk/fixed/pitch_analysis_core_FIX.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/pitch_analysis_core_FIX.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/pitch_analysis_core_FIX.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/typedef.h \

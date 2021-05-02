@@ -1,5 +1,5 @@
 Drivers/CMSIS/system_stm32l5xx.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/system_stm32l5xx.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/system_stm32l5xx.c \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l5xx.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32L5xx/Include/stm32l552xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm33.h \

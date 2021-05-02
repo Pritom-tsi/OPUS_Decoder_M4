@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/src/opus_decoder.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_decoder.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_decoder.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/celt.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
@@ -28,7 +28,7 @@ Middlewares/Third Party/Opus/src/opus_decoder.o: \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/entenc.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/stack_alloc.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/float_cast.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/os_support.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/structs.h \
@@ -106,7 +106,7 @@ Middlewares/Third Party/Opus/src/opus_decoder.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/float_cast.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h:
 

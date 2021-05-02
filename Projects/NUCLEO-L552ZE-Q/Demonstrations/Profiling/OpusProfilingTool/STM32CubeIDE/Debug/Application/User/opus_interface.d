@@ -1,5 +1,5 @@
 Application/User/opus_interface.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/opus_interface.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Projects/NUCLEO-L552ZE-Q/Demonstrations/Profiling/OpusProfilingTool/Src/opus_interface.c \
  ../../Inc/opus_interface.h ../../Inc/cube_hal.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal.h \
  ../../Inc/stm32l5xx_hal_conf.h \

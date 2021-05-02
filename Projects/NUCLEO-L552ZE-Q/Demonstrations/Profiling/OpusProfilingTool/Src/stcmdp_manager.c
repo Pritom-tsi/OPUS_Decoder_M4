@@ -1,4 +1,5 @@
-/**
+/*
+*
   ******************************************************************************
   * @file    stcmdp_manager.c
   * @author  SRA 
@@ -15,59 +16,59 @@
   *                             www.st.com/SLA0094
   *
   ******************************************************************************
-  */
 
-/* Includes ------------------------------------------------------------------*/
+
+ Includes ------------------------------------------------------------------
 #include "stcmdp_manager.h"
 #include "uart_protocol_interface.h"
 #include "stcmdp_opt_command.h"
 #include "opt_cmd_handlers.h"
 
-/** @addtogroup DATA_LOG
+* @addtogroup DATA_LOG
 * @{
-*/
 
-/** @defgroup STCMDP_INTERPRETER STCMDP_INTERPRETER
+
+* @defgroup STCMDP_INTERPRETER STCMDP_INTERPRETER
 * @{
-*/
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private defines -----------------------------------------------------------*/
+
+ Private typedef -----------------------------------------------------------
+ Private defines -----------------------------------------------------------
 #define HOST_ADDRESS            0x32
 #define UART_INTERFACE          0x01
 #define DEV_ADDR                50
 
-/* Private macros ------------------------------------------------------------*/
+ Private macros ------------------------------------------------------------
 
-/** @defgroup STCMDP_INTERPRETER_Private_Variables STCMDP_INTERPRETER_Private_Variables
+* @defgroup STCMDP_INTERPRETER_Private_Variables STCMDP_INTERPRETER_Private_Variables
 * @{
-*/
-/* Private variables ---------------------------------------------------------*/
+
+ Private variables ---------------------------------------------------------
 static uint8_t PresentationString[] = {"OPT|NucleoL552ZE_Q|1.0.0"};
 volatile uint8_t DataStreamingDest = 0x01;
 volatile uint8_t senderInterface = 0;
 TMsg Msg;
 
-/**
+*
   * @}
-  */
 
-/* Global variables ----------------------------------------------------------*/
+
+ Global variables ----------------------------------------------------------
 uint32_t led_toggle_count = 0;
 
-/* Private function prototypes -----------------------------------------------*/
+ Private function prototypes -----------------------------------------------
 static uint8_t HandleMSG(TMsg *Msg);
 static void BUILD_REPLY_HEADER(TMsg *Msg);
 static void BUILD_NACK_HEADER(TMsg *Msg);
 static void Generic_SendMsg(TMsg *Msg);
 static uint8_t Generic_ReceivedMSG(TMsg *Msg);
 
-/* Functions Definition ------------------------------------------------------*/
-/**
+ Functions Definition ------------------------------------------------------
+*
  * @brief  Control if a new message is received and handle it.
  * @param  None.
  * @retval None.
- */
+
 void STCmdP_manager(void)
 {
   if (Generic_ReceivedMSG((TMsg*) &Msg))
@@ -80,11 +81,11 @@ void STCmdP_manager(void)
   }
 }
 
-/**
+*
   * @brief  Build reply msg header
   * @param  Msg pointer to the reply msg
   * @retval None
-  */
+
 static void BUILD_REPLY_HEADER(TMsg *Msg)
 {
   Msg->Data[0] = Msg->Data[1];
@@ -93,11 +94,11 @@ static void BUILD_REPLY_HEADER(TMsg *Msg)
   Msg->Len = 3;
 }
 
-/**
+*
   * @brief  Build reply failed msg header
   * @param  Msg pointer to the reply msg
   * @retval None
-  */
+
 static void BUILD_NACK_HEADER(TMsg *Msg)
 {
   Msg->Data[0] = Msg->Data[1];
@@ -106,11 +107,11 @@ static void BUILD_NACK_HEADER(TMsg *Msg)
   Msg->Len = 3;
 }
 
-/**
+*
   * @brief  Send masg through selected interface
   * @param  Msg pointer to the sending msg
   * @retval None
-  */
+
 static void Generic_SendMsg(TMsg *Msg)
 {
   switch(senderInterface)
@@ -121,11 +122,11 @@ static void Generic_SendMsg(TMsg *Msg)
   }
 }
 
-/**
+*
   * @brief  Check if new msg is been received on the selected interface
   * @param  Msg pointer for the new msg
   * @retval 1 if a new message is received 0 otherwise
-  */
+
 static uint8_t Generic_ReceivedMSG(TMsg *Msg)
 {
   if (UART_ReceivedMSG(Msg)) 
@@ -136,11 +137,11 @@ static uint8_t Generic_ReceivedMSG(TMsg *Msg)
   return 0;
 }
 
-/**
+*
   * @brief  Handle the received msg
   * @param  Msg pointer to the new msg
   * @retval Error code (1=OK, 0=Error)
-  */
+
 static uint8_t HandleMSG(TMsg *Msg)
 {
   const uint8_t *p1;
@@ -149,7 +150,7 @@ static uint8_t HandleMSG(TMsg *Msg)
 
   if (Msg->Len < 2) return 0;
   if (Msg->Data[0] != DEV_ADDR) return 0;
-  switch (Msg->Data[2]) /** CMD **/
+  switch (Msg->Data[2]) * CMD *
   {
     case CMD_Ping:
       if (Msg->Len != 3) return 0;
@@ -246,16 +247,17 @@ static uint8_t HandleMSG(TMsg *Msg)
 }
 
 
-/**
+*
   * @}
-  */
 
-/**
+
+*
   * @}
-  */
 
-/**
+
+*
   * @}
-  */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+*********************** (C) COPYRIGHT STMicroelectronics *****END OF FILE***
+*/

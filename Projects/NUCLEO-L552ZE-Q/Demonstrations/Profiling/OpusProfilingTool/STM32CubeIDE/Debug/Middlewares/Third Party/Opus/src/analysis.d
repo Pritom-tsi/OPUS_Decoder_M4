@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/src/analysis.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/analysis.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/analysis.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/mathops.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
@@ -26,10 +26,10 @@ Middlewares/Third Party/Opus/src/analysis.o: \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/quant_bands.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/modes.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/mathops.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/analysis.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/analysis.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/mlp.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/mlp.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/stack_alloc.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/float_cast.h
 
@@ -85,13 +85,13 @@ Middlewares/Third Party/Opus/src/analysis.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/mathops.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/analysis.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/analysis.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/mlp.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/mlp.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/stack_alloc.h:
 

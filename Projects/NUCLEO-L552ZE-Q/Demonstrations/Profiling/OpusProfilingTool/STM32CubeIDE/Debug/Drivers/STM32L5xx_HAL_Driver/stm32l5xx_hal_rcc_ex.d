@@ -1,5 +1,5 @@
 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc_ex.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/STM32L5xx_HAL_Driver/Src/stm32l5xx_hal_rcc_ex.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/STM32L5xx_HAL_Driver/Src/stm32l5xx_hal_rcc_ex.c \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal.h \
  ../../Inc/stm32l5xx_hal_conf.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_rcc.h \

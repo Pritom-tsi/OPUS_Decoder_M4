@@ -1,7 +1,7 @@
 Middlewares/Third Party/Opus/silk/fixed/regularize_correlations_FIX.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/regularize_correlations_FIX.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/regularize_correlations_FIX.c \
  ../../Inc/config.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/typedef.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
@@ -23,7 +23,7 @@ Middlewares/Third Party/Opus/silk/fixed/regularize_correlations_FIX.o: \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/MacroCount.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/MacroDebug.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/arm/SigProc_FIX_armv4.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/structs_FIX.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/structs_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/typedef.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/main.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h \
@@ -48,7 +48,7 @@ Middlewares/Third Party/Opus/silk/fixed/regularize_correlations_FIX.o: \
 
 ../../Inc/config.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h:
 
@@ -92,7 +92,7 @@ D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fi
 
 ../../../../../../../Middlewares/Third_Party/Opus/silk/arm/SigProc_FIX_armv4.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/fixed/structs_FIX.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/fixed/structs_FIX.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/silk/typedef.h:
 

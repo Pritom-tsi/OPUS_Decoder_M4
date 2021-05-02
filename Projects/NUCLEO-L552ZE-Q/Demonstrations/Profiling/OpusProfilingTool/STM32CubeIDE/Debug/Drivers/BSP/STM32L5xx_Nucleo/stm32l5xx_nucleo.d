@@ -1,6 +1,6 @@
 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.c \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h \
  ../../Inc/stm32l5xx_nucleo_conf.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal.h \
  ../../Inc/stm32l5xx_hal_conf.h \
@@ -32,9 +32,9 @@ Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o: \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_pwr_ex.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_uart.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_uart_ex.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h:
 
 ../../Inc/stm32l5xx_nucleo_conf.h:
 
@@ -98,4 +98,4 @@ D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5
 
 ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal_uart_ex.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h:

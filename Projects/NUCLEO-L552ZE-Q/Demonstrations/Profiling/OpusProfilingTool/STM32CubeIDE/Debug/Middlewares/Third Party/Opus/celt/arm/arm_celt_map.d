@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/celt/arm/arm_celt_map.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/celt/arm/arm_celt_map.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/celt/arm/arm_celt_map.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/pitch.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/modes.h \

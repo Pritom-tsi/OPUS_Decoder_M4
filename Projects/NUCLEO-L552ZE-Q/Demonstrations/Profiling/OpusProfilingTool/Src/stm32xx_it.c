@@ -99,12 +99,12 @@ void PendSV_Handler(void)
 * @param  None
 * @retval None
 */
-
-void SysTick_Handler(void)
+//commented out by Pritom
+/*void SysTick_Handler(void)
 {
   HAL_IncTick();
   led_toggle_count++;
-}
+}*/
 
 /******************************************************************************/
 /*                 STM32L5xx Peripherals Interrupt Handlers                   */
@@ -118,10 +118,11 @@ void SysTick_Handler(void)
   * @param  None
   * @retval None  
   */
-void DMA1_Channel1_IRQHandler(void)
+//Commented out by Pritom
+/*void DMA1_Channel1_IRQHandler(void)
 {
   HAL_DMA_IRQHandler(UartHandle.hdmatx);
-}
+}*/
 
 
 /**
@@ -129,10 +130,13 @@ void DMA1_Channel1_IRQHandler(void)
   * @param  None
   * @retval None   
   */
+//Commented out by Pritom
+/*
 void LPUART1_IRQHandler(void)
 {
   HAL_UART_IRQHandler(&UartHandle);
 }
+*/
 
 /******************************************************************************/
 /*                 STM32L5xx Peripherals Interrupt Handlers                   */

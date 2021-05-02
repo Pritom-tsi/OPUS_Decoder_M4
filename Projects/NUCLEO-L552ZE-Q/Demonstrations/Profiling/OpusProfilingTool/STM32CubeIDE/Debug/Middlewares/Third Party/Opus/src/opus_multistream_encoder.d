@@ -1,12 +1,12 @@
 Middlewares/Third Party/Opus/src/opus_multistream_encoder.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_multistream_encoder.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_multistream_encoder.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_multistream.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
@@ -53,7 +53,7 @@ Middlewares/Third Party/Opus/src/opus_multistream_encoder.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h:
 

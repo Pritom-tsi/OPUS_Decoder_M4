@@ -1,5 +1,5 @@
 Middlewares/Third Party/Opus/silk/control_codec.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/control_codec.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/control_codec.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/fixed/main_FIX.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/SigProc_FIX.h \
@@ -46,9 +46,9 @@ Middlewares/Third Party/Opus/silk/control_codec.o: \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/debug.h \
  ../../../../../../../Middlewares/Third_Party/Opus/silk/fixed/arm/warped_autocorrelation_FIX_arm.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/stack_alloc.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/tuning_parameters.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/pitch_est_defines.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/SigProc_FIX.h
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/tuning_parameters.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/pitch_est_defines.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/SigProc_FIX.h
 
 ../../Inc/config.h:
 
@@ -142,8 +142,8 @@ Middlewares/Third Party/Opus/silk/control_codec.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/stack_alloc.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/tuning_parameters.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/tuning_parameters.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/pitch_est_defines.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/pitch_est_defines.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/silk/SigProc_FIX.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/silk/SigProc_FIX.h:

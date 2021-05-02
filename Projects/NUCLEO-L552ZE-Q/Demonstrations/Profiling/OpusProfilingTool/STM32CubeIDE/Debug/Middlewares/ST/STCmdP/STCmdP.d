@@ -1,5 +1,5 @@
 Middlewares/ST/STCmdP/STCmdP.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/ST/STCmdP/src/STCmdP.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/ST/STCmdP/src/STCmdP.c \
  ../../../../../../../Middlewares/ST/STCmdP/inc/STCmdP.h \
  ../../Inc/cube_hal.h \
  ../../../../../../../Drivers/STM32L5xx_HAL_Driver/Inc/stm32l5xx_hal.h \

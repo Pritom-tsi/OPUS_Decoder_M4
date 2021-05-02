@@ -1,10 +1,10 @@
 Middlewares/Third Party/Opus/src/opus.o: \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus.c \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus.c \
  ../../Inc/config.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
- D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h \
+ D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h \
  ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
  ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
@@ -26,7 +26,7 @@ Middlewares/Third Party/Opus/src/opus.o: \
 
 ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h:
 
-D:/opus\ all/STM32CubeExpansion_OPUS_V1.0.0/Middlewares/Third_Party/Opus/src/opus_private.h:
+D:/opus\ all/OPUS_MCU_Decoder/OPUS_Decoder_M4/Middlewares/Third_Party/Opus/src/opus_private.h:
 
 ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h:
 
