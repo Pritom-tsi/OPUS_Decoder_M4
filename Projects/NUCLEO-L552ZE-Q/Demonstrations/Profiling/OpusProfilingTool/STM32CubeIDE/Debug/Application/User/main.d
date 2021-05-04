@@ -34,7 +34,22 @@ Application/User/main.o: \
  ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.h \
  ../../Inc/stm32l5xx_nucleo_conf.h \
  ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h \
- ../../Inc/stm32l5xx_hal_conf.h
+ ../../Inc/stm32l5xx_hal_conf.h ../../Inc/opus_interface.h \
+ ../../Inc/cube_hal.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/src/opus_private.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/celt.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/include/opus_custom.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/entenc.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/entcode.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/ecintrin.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h \
+ ../../../../../../../Middlewares/Third_Party/Opus/celt/entdec.h
 
 ../../Inc/cube_hal.h:
 
@@ -105,3 +120,35 @@ Application/User/main.o: \
 ../../../../../../../Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo_errno.h:
 
 ../../Inc/stm32l5xx_hal_conf.h:
+
+../../Inc/opus_interface.h:
+
+../../Inc/cube_hal.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/src/opus_private.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus_types.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus_defines.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/celt.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/include/opus_custom.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/entenc.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/entcode.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/ecintrin.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/arch.h:
+
+../../../../../../../Middlewares/Third_Party/Opus/celt/entdec.h:

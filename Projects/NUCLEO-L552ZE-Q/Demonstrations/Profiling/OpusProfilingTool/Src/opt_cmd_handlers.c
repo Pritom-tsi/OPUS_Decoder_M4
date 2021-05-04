@@ -32,6 +32,8 @@
 
 /* Private macros ------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
+
+//commented out by Pritom
 ENC_Opus_ConfigTypeDef EncConfigOpus;   /*!< opus encode configuration.*/
 DEC_Opus_ConfigTypeDef DecConfigOpus;   /*!< opus decode configuration.*/
 
@@ -44,7 +46,9 @@ DEC_Opus_ConfigTypeDef DecConfigOpus;   /*!< opus decode configuration.*/
  * @param  Message received.
  * @retval OPT_SUCCESS in case of success OPT_ERROR otherwise.
  */
-OPT_StatusTypeDef Handle_CMD_InitOpusEncoder(TMsg *Msg)
+
+//Commented out by Pritom
+/*OPT_StatusTypeDef Handle_CMD_InitOpusEncoder(TMsg *Msg)
 {
   Opus_Status status;
   
@@ -108,7 +112,7 @@ OPT_StatusTypeDef Handle_CMD_InitOpusEncoder(TMsg *Msg)
   }
   
   return OPT_SUCCESS;
-}
+}*/
 
 /**
  * @brief  Handle init opus decoder command.
@@ -151,12 +155,13 @@ OPT_StatusTypeDef Handle_CMD_InitOpusDecoder(TMsg *Msg)
  */
 OPT_StatusTypeDef Handle_CMD_ResetOpus(TMsg *Msg)
 {
-  if(ENC_Opus_IsConfigured())
+	//Commented out by Pritom
+ /* if(ENC_Opus_IsConfigured())
   {   
     ENC_Opus_Deinit();
     free(EncConfigOpus.pInternalMemory);
     memset(&EncConfigOpus, 0, sizeof(EncConfigOpus));
-  }
+  }*/
   if(DEC_Opus_IsConfigured())
   {
     DEC_Opus_Deinit();
@@ -185,7 +190,7 @@ OPT_StatusTypeDef Handle_CMD_EncDec_File_Request(TMsg *Msg)
   /******** Encoder profiling ********/
   
   /* Enable trace and debug block */
-  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+ // CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
 
   __disable_irq();
   
@@ -195,18 +200,20 @@ OPT_StatusTypeDef Handle_CMD_EncDec_File_Request(TMsg *Msg)
   /* enable the counter */
   DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk; 
    
-  numEncByte = ENC_Opus_Encode(&Msg->Data[3], EncConfigOpus.pInternalMemory);
+  //Commented by Pritom
+ // numEncByte = ENC_Opus_Encode(&Msg->Data[3], EncConfigOpus.pInternalMemory);
 
   /* disable the counter */
   DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk; 
   
-  enc_clock_count = DWT->CYCCNT;  
+//  enc_clock_count = DWT->CYCCNT;
   
   __enable_irq();
   
   /***********************************/
   
   /* "RFC6716 - Definition of the Opus Audio Codec" for more details */
+
   toc_byte = EncConfigOpus.pInternalMemory[0] >> 3;
   
   if(toc_byte<12)
@@ -228,7 +235,8 @@ OPT_StatusTypeDef Handle_CMD_EncDec_File_Request(TMsg *Msg)
   {
     STCmdP_Serialize(&Msg->Data[4], numEncByte, 2);
     STCmdP_Serialize(&Msg->Data[6], enc_clock_count, 4);
-    memcpy(&Msg->Data[10], EncConfigOpus.pInternalMemory, numEncByte);
+    //commented out by Pritom
+  //  memcpy(&Msg->Data[10], EncConfigOpus.pInternalMemory, numEncByte);
   }
   else
   {
@@ -285,40 +293,47 @@ OPT_StatusTypeDef Handle_CMD_EncDec_File_Request(TMsg *Msg)
 OPT_StatusTypeDef Handle_CMD_EncDec_NoFile_Request(TMsg *Msg)
 {
   uint32_t numEncByte = 0;
-  uint32_t enc_clock_count = 0;
+//  uint32_t enc_clock_count = 0;
   uint32_t numDecShort = 0;
   uint32_t dec_clock_count = 0;
-  uint8_t toc_byte = 0;
-  uint8_t mode = 0;
+//  uint8_t toc_byte = 0;
+//  uint8_t mode = 0;
 
   /******** Encoder profiling ********/
   
   /* Enable trace and debug block */
-  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+//Commented out by Pritom
+  //CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
   
-   __disable_irq();
+  //Commented out by Pritom
+ //  __disable_irq();
   
   /* reset the counter */
-  DWT->CYCCNT = 0;       
+  //Commented out by Pritom
+ // DWT->CYCCNT = 0;
  
   /* enable the counter */
-  DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk; 
-
-  numEncByte = ENC_Opus_Encode(&Msg->Data[3], EncConfigOpus.pInternalMemory);  
+  //Commented out by Pritom
+//  DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+//Commented out by Pritom
+//  numEncByte = ENC_Opus_Encode(&Msg->Data[3], EncConfigOpus.pInternalMemory);
   
    /* disable the counter */
-  DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk; 
+  //Commented out by Pritom
+ /* DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk;
   
   enc_clock_count = DWT->CYCCNT;  
   
-  __enable_irq();
+  __enable_irq();*/
 
   /***********************************/
   
   /* "RFC6716 - Definition of the Opus Audio Codec" for more details */
-  toc_byte = EncConfigOpus.pInternalMemory[0] >> 3;
+//Commented out by Pritom
+  // toc_byte = EncConfigOpus.pInternalMemory[0] >> 3;
   
-  if(toc_byte<12)
+  //Commented out by Pritom
+/*  if(toc_byte<12)
   {
     mode = SILK_MODE;
   }
@@ -341,7 +356,7 @@ OPT_StatusTypeDef Handle_CMD_EncDec_NoFile_Request(TMsg *Msg)
   else
   {
     return OPT_ERROR;
-  }
+  }*/
   
   /******** Decoder profiling ********/
   

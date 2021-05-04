@@ -9,9 +9,9 @@ d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide
 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-init.o)
                               d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard/crt0.o (__libc_init_array)
 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-malloc.o)
-                              Application/User/opt_cmd_handlers.o (malloc)
+                              Application/User/main.o (malloc)
 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-memcpy-stub.o)
-                              Application/User/opt_cmd_handlers.o (memcpy)
+                              Middlewares/Third Party/Opus/celt/bands.o (memcpy)
 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-memmove.o)
                               Middlewares/Third Party/Opus/celt/celt.o (memmove)
 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-memset.o)
@@ -71,9 +71,9 @@ Allocating common symbols
 Common symbol       size              file
 
 errno               0x4               d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-reent.o)
-EncConfigOpus       0x18              Application/User/opt_cmd_handlers.o
+EncConfigOpus       0x18              Application/User/main.o
 uwTick              0x4               Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
-DecConfigOpus       0x10              Application/User/opt_cmd_handlers.o
+DecConfigOpus       0x10              Application/User/main.o
 WaitingMsgList      0x190             Middlewares/ST/STCmdP/STCmdP.o
 
 Discarded input sections
@@ -136,9 +136,38 @@ Discarded input sections
  .group         0x0000000000000000        0xc Application/User/main.o
  .group         0x0000000000000000        0xc Application/User/main.o
  .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
+ .group         0x0000000000000000        0xc Application/User/main.o
  .text          0x0000000000000000        0x0 Application/User/main.o
  .data          0x0000000000000000        0x0 Application/User/main.o
  .bss           0x0000000000000000        0x0 Application/User/main.o
+ .text.InitOpusDecoder
+                0x0000000000000000       0x6c Application/User/main.o
+ .text.ResetOpus
+                0x0000000000000000       0x28 Application/User/main.o
+ .text.EncDec_File_Request
+                0x0000000000000000       0x78 Application/User/main.o
+ COMMON         0x0000000000000000       0x28 Application/User/main.o
  .group         0x0000000000000000        0xc Application/User/opt_cmd_handlers.o
  .group         0x0000000000000000        0xc Application/User/opt_cmd_handlers.o
  .group         0x0000000000000000        0xc Application/User/opt_cmd_handlers.o
@@ -215,22 +244,20 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Application/User/opt_cmd_handlers.o
  .data          0x0000000000000000        0x0 Application/User/opt_cmd_handlers.o
  .bss           0x0000000000000000        0x0 Application/User/opt_cmd_handlers.o
- .text.Handle_CMD_InitOpusEncoder
-                0x0000000000000000       0xdc Application/User/opt_cmd_handlers.o
  .text.Handle_CMD_InitOpusDecoder
                 0x0000000000000000       0x6c Application/User/opt_cmd_handlers.o
  .text.Handle_CMD_ResetOpus
-                0x0000000000000000       0x4c Application/User/opt_cmd_handlers.o
+                0x0000000000000000       0x28 Application/User/opt_cmd_handlers.o
  .text.Handle_CMD_EncDec_File_Request
-                0x0000000000000000      0x10c Application/User/opt_cmd_handlers.o
- .text.Handle_CMD_EncDec_NoFile_Request
-                0x0000000000000000       0xe0 Application/User/opt_cmd_handlers.o
- .debug_info    0x0000000000000000     0x17ac Application/User/opt_cmd_handlers.o
- .debug_abbrev  0x0000000000000000      0x30a Application/User/opt_cmd_handlers.o
- .debug_loc     0x0000000000000000      0x408 Application/User/opt_cmd_handlers.o
- .debug_aranges
                 0x0000000000000000       0x40 Application/User/opt_cmd_handlers.o
- .debug_ranges  0x0000000000000000       0x30 Application/User/opt_cmd_handlers.o
+ .text.Handle_CMD_EncDec_NoFile_Request
+                0x0000000000000000       0x70 Application/User/opt_cmd_handlers.o
+ .debug_info    0x0000000000000000     0x143d Application/User/opt_cmd_handlers.o
+ .debug_abbrev  0x0000000000000000      0x315 Application/User/opt_cmd_handlers.o
+ .debug_loc     0x0000000000000000      0x181 Application/User/opt_cmd_handlers.o
+ .debug_aranges
+                0x0000000000000000       0x38 Application/User/opt_cmd_handlers.o
+ .debug_ranges  0x0000000000000000       0x28 Application/User/opt_cmd_handlers.o
  .debug_macro   0x0000000000000000      0x424 Application/User/opt_cmd_handlers.o
  .debug_macro   0x0000000000000000      0xa66 Application/User/opt_cmd_handlers.o
  .debug_macro   0x0000000000000000      0x190 Application/User/opt_cmd_handlers.o
@@ -305,13 +332,12 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x29 Application/User/opt_cmd_handlers.o
  .debug_macro   0x0000000000000000       0x16 Application/User/opt_cmd_handlers.o
  .debug_macro   0x0000000000000000       0x20 Application/User/opt_cmd_handlers.o
- .debug_line    0x0000000000000000      0xf16 Application/User/opt_cmd_handlers.o
- .debug_str     0x0000000000000000    0xfd040 Application/User/opt_cmd_handlers.o
+ .debug_line    0x0000000000000000      0xe3c Application/User/opt_cmd_handlers.o
+ .debug_str     0x0000000000000000    0xfcf57 Application/User/opt_cmd_handlers.o
  .comment       0x0000000000000000       0x7c Application/User/opt_cmd_handlers.o
- .debug_frame   0x0000000000000000       0xb8 Application/User/opt_cmd_handlers.o
+ .debug_frame   0x0000000000000000       0x7c Application/User/opt_cmd_handlers.o
  .ARM.attributes
                 0x0000000000000000       0x3c Application/User/opt_cmd_handlers.o
- COMMON         0x0000000000000000       0x28 Application/User/opt_cmd_handlers.o
  .group         0x0000000000000000        0xc Application/User/opus_interface.o
  .group         0x0000000000000000        0xc Application/User/opus_interface.o
  .group         0x0000000000000000        0xc Application/User/opus_interface.o
@@ -381,45 +407,23 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Application/User/opus_interface.o
  .data          0x0000000000000000        0x0 Application/User/opus_interface.o
  .bss           0x0000000000000000        0x0 Application/User/opus_interface.o
- .text.ENC_Opus_getMemorySize
-                0x0000000000000000       0x28 Application/User/opus_interface.o
  .text.DEC_Opus_getMemorySize
                 0x0000000000000000       0x30 Application/User/opus_interface.o
- .text.ENC_Opus_Init
-                0x0000000000000000       0x98 Application/User/opus_interface.o
- .text.ENC_Opus_Deinit
-                0x0000000000000000       0x18 Application/User/opus_interface.o
- .text.ENC_Opus_IsConfigured
-                0x0000000000000000        0xc Application/User/opus_interface.o
  .text.DEC_Opus_Init
                 0x0000000000000000       0x54 Application/User/opus_interface.o
  .text.DEC_Opus_Deinit
                 0x0000000000000000       0x18 Application/User/opus_interface.o
  .text.DEC_Opus_IsConfigured
                 0x0000000000000000        0xc Application/User/opus_interface.o
- .text.ENC_Opus_Set_Bitrate
-                0x0000000000000000       0x20 Application/User/opus_interface.o
- .text.ENC_Opus_Set_CBR
-                0x0000000000000000       0x1c Application/User/opus_interface.o
- .text.ENC_Opus_Set_VBR
-                0x0000000000000000       0x1c Application/User/opus_interface.o
- .text.ENC_Opus_Set_Complexity
-                0x0000000000000000       0x20 Application/User/opus_interface.o
- .text.ENC_Opus_Force_SILKmode
-                0x0000000000000000       0x20 Application/User/opus_interface.o
- .text.ENC_Opus_Force_CELTmode
-                0x0000000000000000       0x20 Application/User/opus_interface.o
- .text.ENC_Opus_Encode
-                0x0000000000000000       0x20 Application/User/opus_interface.o
  .text.DEC_Opus_Decode
                 0x0000000000000000       0x24 Application/User/opus_interface.o
- .bss.hOpus     0x0000000000000000       0x18 Application/User/opus_interface.o
- .debug_info    0x0000000000000000     0x122e Application/User/opus_interface.o
- .debug_abbrev  0x0000000000000000      0x31c Application/User/opus_interface.o
- .debug_loc     0x0000000000000000      0x448 Application/User/opus_interface.o
+ .bss.hOpus     0x0000000000000000        0xc Application/User/opus_interface.o
+ .debug_info    0x0000000000000000      0xdf0 Application/User/opus_interface.o
+ .debug_abbrev  0x0000000000000000      0x292 Application/User/opus_interface.o
+ .debug_loc     0x0000000000000000      0x165 Application/User/opus_interface.o
  .debug_aranges
-                0x0000000000000000       0x98 Application/User/opus_interface.o
- .debug_ranges  0x0000000000000000       0x88 Application/User/opus_interface.o
+                0x0000000000000000       0x40 Application/User/opus_interface.o
+ .debug_ranges  0x0000000000000000       0x30 Application/User/opus_interface.o
  .debug_macro   0x0000000000000000      0x391 Application/User/opus_interface.o
  .debug_macro   0x0000000000000000      0xa66 Application/User/opus_interface.o
  .debug_macro   0x0000000000000000      0x190 Application/User/opus_interface.o
@@ -487,10 +491,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x10b Application/User/opus_interface.o
  .debug_macro   0x0000000000000000       0x58 Application/User/opus_interface.o
  .debug_macro   0x0000000000000000       0x3d Application/User/opus_interface.o
- .debug_line    0x0000000000000000      0xe42 Application/User/opus_interface.o
- .debug_str     0x0000000000000000    0xfcb77 Application/User/opus_interface.o
+ .debug_line    0x0000000000000000      0xd41 Application/User/opus_interface.o
+ .debug_str     0x0000000000000000    0xfc9ab Application/User/opus_interface.o
  .comment       0x0000000000000000       0x7c Application/User/opus_interface.o
- .debug_frame   0x0000000000000000      0x190 Application/User/opus_interface.o
+ .debug_frame   0x0000000000000000       0x88 Application/User/opus_interface.o
  .ARM.attributes
                 0x0000000000000000       0x3c Application/User/opus_interface.o
  .group         0x0000000000000000        0xc Application/User/stcmdp_manager.o
@@ -21511,161 +21515,194 @@ LOAD d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cub
                 0x000000000000034a       0x26 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v8-m.main/fpv5-sp/hard/crtn.o
 OUTPUT(OpusProfilingTool.elf elf32-littlearm)
 
-.debug_line     0x0000000000000000     0x6722
+.debug_line     0x0000000000000000     0x6c13
  .debug_line    0x0000000000000000       0x8e Application/Startup/startup_stm32l552zetx.o
- .debug_line    0x000000000000008e      0x8d0 Application/User/main.o
- .debug_line    0x000000000000095e      0x8a5 Application/User/stm32xx_it.o
- .debug_line    0x0000000000001203      0x968 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_line    0x0000000000001b6b      0x84d Drivers/CMSIS/system_stm32l5xx.o
- .debug_line    0x00000000000023b8      0xa86 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_line    0x0000000000002e3e      0x9fc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_line    0x000000000000383a      0x9b0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_line    0x00000000000041ea      0x9ae Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_line    0x0000000000004b98      0xde7 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_line    0x000000000000597f      0xda3 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_line    0x000000000000008e      0xdc1 Application/User/main.o
+ .debug_line    0x0000000000000e4f      0x8a5 Application/User/stm32xx_it.o
+ .debug_line    0x00000000000016f4      0x968 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_line    0x000000000000205c      0x84d Drivers/CMSIS/system_stm32l5xx.o
+ .debug_line    0x00000000000028a9      0xa86 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_line    0x000000000000332f      0x9fc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_line    0x0000000000003d2b      0x9b0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_line    0x00000000000046db      0x9ae Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_line    0x0000000000005089      0xde7 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_line    0x0000000000005e70      0xda3 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_info     0x0000000000000000     0x8227
+.debug_info     0x0000000000000000     0x93cb
  .debug_info    0x0000000000000000       0x22 Application/Startup/startup_stm32l552zetx.o
- .debug_info    0x0000000000000022      0x8b3 Application/User/main.o
- .debug_info    0x00000000000008d5      0x903 Application/User/stm32xx_it.o
- .debug_info    0x00000000000011d8     0x106d Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_info    0x0000000000002245      0x94f Drivers/CMSIS/system_stm32l5xx.o
- .debug_info    0x0000000000002b94      0xeed Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_info    0x0000000000003a81     0x10ef Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_info    0x0000000000004b70      0x7e8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_info    0x0000000000005358      0x9b0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_info    0x0000000000005d08     0x108d Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_info    0x0000000000006d95     0x1492 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_info    0x0000000000000022     0x1a57 Application/User/main.o
+ .debug_info    0x0000000000001a79      0x903 Application/User/stm32xx_it.o
+ .debug_info    0x000000000000237c     0x106d Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_info    0x00000000000033e9      0x94f Drivers/CMSIS/system_stm32l5xx.o
+ .debug_info    0x0000000000003d38      0xeed Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_info    0x0000000000004c25     0x10ef Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_info    0x0000000000005d14      0x7e8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_info    0x00000000000064fc      0x9b0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_info    0x0000000000006eac     0x108d Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_info    0x0000000000007f39     0x1492 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_abbrev   0x0000000000000000     0x190b
+.debug_abbrev   0x0000000000000000     0x1ac0
  .debug_abbrev  0x0000000000000000       0x12 Application/Startup/startup_stm32l552zetx.o
- .debug_abbrev  0x0000000000000012      0x223 Application/User/main.o
- .debug_abbrev  0x0000000000000235      0x161 Application/User/stm32xx_it.o
- .debug_abbrev  0x0000000000000396      0x2c6 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_abbrev  0x000000000000065c      0x165 Drivers/CMSIS/system_stm32l5xx.o
- .debug_abbrev  0x00000000000007c1      0x2f4 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_abbrev  0x0000000000000ab5      0x315 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_abbrev  0x0000000000000dca      0x238 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_abbrev  0x0000000000001002      0x303 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_abbrev  0x0000000000001305      0x306 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_abbrev  0x000000000000160b      0x300 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_abbrev  0x0000000000000012      0x3d8 Application/User/main.o
+ .debug_abbrev  0x00000000000003ea      0x161 Application/User/stm32xx_it.o
+ .debug_abbrev  0x000000000000054b      0x2c6 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_abbrev  0x0000000000000811      0x165 Drivers/CMSIS/system_stm32l5xx.o
+ .debug_abbrev  0x0000000000000976      0x2f4 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_abbrev  0x0000000000000c6a      0x315 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_abbrev  0x0000000000000f7f      0x238 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_abbrev  0x00000000000011b7      0x303 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_abbrev  0x00000000000014ba      0x306 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_abbrev  0x00000000000017c0      0x300 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_aranges  0x0000000000000000      0x608
+.debug_aranges  0x0000000000000000      0x620
  .debug_aranges
                 0x0000000000000000       0x28 Application/Startup/startup_stm32l552zetx.o
  .debug_aranges
-                0x0000000000000028       0x28 Application/User/main.o
+                0x0000000000000028       0x40 Application/User/main.o
  .debug_aranges
-                0x0000000000000050       0x28 Application/User/stm32xx_it.o
+                0x0000000000000068       0x28 Application/User/stm32xx_it.o
  .debug_aranges
-                0x0000000000000078       0x90 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+                0x0000000000000090       0x90 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
  .debug_aranges
-                0x0000000000000108       0x28 Drivers/CMSIS/system_stm32l5xx.o
+                0x0000000000000120       0x28 Drivers/CMSIS/system_stm32l5xx.o
  .debug_aranges
-                0x0000000000000130      0x128 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+                0x0000000000000148      0x128 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
  .debug_aranges
-                0x0000000000000258       0x90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+                0x0000000000000270       0x90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
  .debug_aranges
-                0x00000000000002e8       0x58 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+                0x0000000000000300       0x58 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
  .debug_aranges
-                0x0000000000000340       0x98 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+                0x0000000000000358       0x98 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
  .debug_aranges
-                0x00000000000003d8      0x1a0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+                0x00000000000003f0      0x1a0 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
  .debug_aranges
-                0x0000000000000578       0x90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+                0x0000000000000590       0x90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_str      0x0000000000000000    0xf8ada
+.debug_str      0x0000000000000000    0xff62e
  .debug_str     0x0000000000000000       0xc1 Application/Startup/startup_stm32l552zetx.o
- .debug_str     0x00000000000000c1    0xf6070 Application/User/main.o
-                                      0xf63da (size before relaxing)
- .debug_str     0x00000000000f6131      0x5cc Application/User/stm32xx_it.o
+ .debug_str     0x00000000000000c1    0xfcbdb Application/User/main.o
+                                      0xfd12d (size before relaxing)
+ .debug_str     0x00000000000fcc9c      0x5c4 Application/User/stm32xx_it.o
                                       0xf650a (size before relaxing)
- .debug_str     0x00000000000f66fd      0x9b1 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_str     0x00000000000fd260      0x9b1 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
                                       0xf6b17 (size before relaxing)
- .debug_str     0x00000000000f70ae      0x1d8 Drivers/CMSIS/system_stm32l5xx.o
+ .debug_str     0x00000000000fdc11      0x1d8 Drivers/CMSIS/system_stm32l5xx.o
                                       0xf5d08 (size before relaxing)
- .debug_str     0x00000000000f7286      0x576 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_str     0x00000000000fdde9      0x56c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
                                       0xf67b8 (size before relaxing)
- .debug_str     0x00000000000f77fc      0x238 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_str     0x00000000000fe355      0x238 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
                                       0xf64b8 (size before relaxing)
- .debug_str     0x00000000000f7a34      0x264 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_str     0x00000000000fe58d      0x264 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
                                       0xf5d1e (size before relaxing)
- .debug_str     0x00000000000f7c98      0x2f4 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_str     0x00000000000fe7f1      0x2f4 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
                                       0xf5d21 (size before relaxing)
- .debug_str     0x00000000000f7f8c      0x737 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_str     0x00000000000feae5      0x732 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
                                       0xf646c (size before relaxing)
- .debug_str     0x00000000000f86c3      0x417 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_str     0x00000000000ff217      0x417 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
                                       0xf6280 (size before relaxing)
 
-.debug_ranges   0x0000000000000000      0x950
+.debug_ranges   0x0000000000000000      0x968
  .debug_ranges  0x0000000000000000       0x20 Application/Startup/startup_stm32l552zetx.o
- .debug_ranges  0x0000000000000020       0x30 Application/User/main.o
- .debug_ranges  0x0000000000000050       0x18 Application/User/stm32xx_it.o
- .debug_ranges  0x0000000000000068       0xc8 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_ranges  0x0000000000000130       0x18 Drivers/CMSIS/system_stm32l5xx.o
- .debug_ranges  0x0000000000000148      0x118 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_ranges  0x0000000000000260      0x148 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_ranges  0x00000000000003a8       0x48 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_ranges  0x00000000000003f0      0x108 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_ranges  0x00000000000004f8      0x1c8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_ranges  0x00000000000006c0      0x290 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_ranges  0x0000000000000020       0x48 Application/User/main.o
+ .debug_ranges  0x0000000000000068       0x18 Application/User/stm32xx_it.o
+ .debug_ranges  0x0000000000000080       0xc8 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_ranges  0x0000000000000148       0x18 Drivers/CMSIS/system_stm32l5xx.o
+ .debug_ranges  0x0000000000000160      0x118 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_ranges  0x0000000000000278      0x148 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_ranges  0x00000000000003c0       0x48 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_ranges  0x0000000000000408      0x108 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_ranges  0x0000000000000510      0x1c8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_ranges  0x00000000000006d8      0x290 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_macro    0x0000000000000000    0x26979
- .debug_macro   0x0000000000000000      0x20b Application/User/main.o
- .debug_macro   0x000000000000020b      0xa66 Application/User/main.o
- .debug_macro   0x0000000000000c71      0x190 Application/User/main.o
- .debug_macro   0x0000000000000e01       0x2e Application/User/main.o
- .debug_macro   0x0000000000000e2f       0x42 Application/User/main.o
- .debug_macro   0x0000000000000e71       0x22 Application/User/main.o
- .debug_macro   0x0000000000000e93       0x8e Application/User/main.o
- .debug_macro   0x0000000000000f21       0x51 Application/User/main.o
- .debug_macro   0x0000000000000f72       0xef Application/User/main.o
- .debug_macro   0x0000000000001061       0x6a Application/User/main.o
- .debug_macro   0x00000000000010cb      0x1df Application/User/main.o
- .debug_macro   0x00000000000012aa       0x1c Application/User/main.o
- .debug_macro   0x00000000000012c6       0x29 Application/User/main.o
- .debug_macro   0x00000000000012ef       0xdf Application/User/main.o
- .debug_macro   0x00000000000013ce     0x1494 Application/User/main.o
- .debug_macro   0x0000000000002862       0x5e Application/User/main.o
- .debug_macro   0x00000000000028c0    0x1ac43 Application/User/main.o
- .debug_macro   0x000000000001d503       0x42 Application/User/main.o
- .debug_macro   0x000000000001d545     0x34d8 Application/User/main.o
- .debug_macro   0x0000000000020a1d      0x16d Application/User/main.o
- .debug_macro   0x0000000000020b8a       0x5c Application/User/main.o
- .debug_macro   0x0000000000020be6     0x1948 Application/User/main.o
- .debug_macro   0x000000000002252e      0xa4b Application/User/main.o
- .debug_macro   0x0000000000022f79      0x153 Application/User/main.o
- .debug_macro   0x00000000000230cc      0x1d9 Application/User/main.o
- .debug_macro   0x00000000000232a5      0x4e1 Application/User/main.o
- .debug_macro   0x0000000000023786      0x1ac Application/User/main.o
- .debug_macro   0x0000000000023932       0x4a Application/User/main.o
- .debug_macro   0x000000000002397c       0x51 Application/User/main.o
- .debug_macro   0x00000000000239cd      0x231 Application/User/main.o
- .debug_macro   0x0000000000023bfe      0x3bb Application/User/main.o
- .debug_macro   0x0000000000023fb9       0x36 Application/User/main.o
- .debug_macro   0x0000000000023fef      0x11c Application/User/main.o
- .debug_macro   0x000000000002410b      0x22c Application/User/main.o
- .debug_macro   0x0000000000024337       0x5b Application/User/main.o
- .debug_macro   0x0000000000024392       0xa5 Application/User/main.o
- .debug_macro   0x0000000000024437       0xf3 Application/User/main.o
- .debug_macro   0x000000000002452a      0x199 Application/User/main.o
- .debug_macro   0x00000000000246c3      0x487 Application/User/main.o
- .debug_macro   0x0000000000024b4a      0x67e Application/User/main.o
- .debug_macro   0x00000000000251c8       0xa6 Application/User/main.o
- .debug_macro   0x000000000002526e      0x3f1 Application/User/main.o
- .debug_macro   0x000000000002565f       0x22 Application/User/main.o
- .debug_macro   0x0000000000025681       0x52 Application/User/main.o
- .debug_macro   0x00000000000256d3       0xa5 Application/User/main.o
- .debug_macro   0x0000000000025778      0x215 Application/User/stm32xx_it.o
- .debug_macro   0x000000000002598d      0x203 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_macro   0x0000000000025b90       0x1c Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_macro   0x0000000000025bac      0x1dc Drivers/CMSIS/system_stm32l5xx.o
- .debug_macro   0x0000000000025d88      0x20c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_macro   0x0000000000025f94      0x1dc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_macro   0x0000000000026170      0x20f Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_macro   0x000000000002637f      0x1e8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_macro   0x0000000000026567      0x20c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_macro   0x0000000000026773      0x206 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+.debug_loc      0x0000000000000000     0x2c3a
+ .debug_loc     0x0000000000000000      0x11c Application/User/main.o
+ .debug_loc     0x000000000000011c      0x25d Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_loc     0x0000000000000379       0xc6 Drivers/CMSIS/system_stm32l5xx.o
+ .debug_loc     0x000000000000043f      0x2ad Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_loc     0x00000000000006ec      0x574 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_loc     0x0000000000000c60      0x335 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_loc     0x0000000000000f95      0x749 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_loc     0x00000000000016de      0xacc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_loc     0x00000000000021aa      0xa90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+
+.debug_macro    0x0000000000000000    0x27c47
+ .debug_macro   0x0000000000000000      0x3ad Application/User/main.o
+ .debug_macro   0x00000000000003ad      0xa66 Application/User/main.o
+ .debug_macro   0x0000000000000e13      0x190 Application/User/main.o
+ .debug_macro   0x0000000000000fa3       0x2e Application/User/main.o
+ .debug_macro   0x0000000000000fd1       0x42 Application/User/main.o
+ .debug_macro   0x0000000000001013       0x22 Application/User/main.o
+ .debug_macro   0x0000000000001035       0x8e Application/User/main.o
+ .debug_macro   0x00000000000010c3       0x51 Application/User/main.o
+ .debug_macro   0x0000000000001114       0xef Application/User/main.o
+ .debug_macro   0x0000000000001203       0x6a Application/User/main.o
+ .debug_macro   0x000000000000126d      0x1df Application/User/main.o
+ .debug_macro   0x000000000000144c       0x1c Application/User/main.o
+ .debug_macro   0x0000000000001468       0x29 Application/User/main.o
+ .debug_macro   0x0000000000001491       0xdf Application/User/main.o
+ .debug_macro   0x0000000000001570     0x1494 Application/User/main.o
+ .debug_macro   0x0000000000002a04       0x5e Application/User/main.o
+ .debug_macro   0x0000000000002a62    0x1ac43 Application/User/main.o
+ .debug_macro   0x000000000001d6a5       0x42 Application/User/main.o
+ .debug_macro   0x000000000001d6e7     0x34d8 Application/User/main.o
+ .debug_macro   0x0000000000020bbf      0x16d Application/User/main.o
+ .debug_macro   0x0000000000020d2c       0x5c Application/User/main.o
+ .debug_macro   0x0000000000020d88     0x1948 Application/User/main.o
+ .debug_macro   0x00000000000226d0      0xa4b Application/User/main.o
+ .debug_macro   0x000000000002311b      0x153 Application/User/main.o
+ .debug_macro   0x000000000002326e      0x1d9 Application/User/main.o
+ .debug_macro   0x0000000000023447      0x4e1 Application/User/main.o
+ .debug_macro   0x0000000000023928      0x1ac Application/User/main.o
+ .debug_macro   0x0000000000023ad4       0x4a Application/User/main.o
+ .debug_macro   0x0000000000023b1e       0x51 Application/User/main.o
+ .debug_macro   0x0000000000023b6f      0x231 Application/User/main.o
+ .debug_macro   0x0000000000023da0      0x3bb Application/User/main.o
+ .debug_macro   0x000000000002415b       0x36 Application/User/main.o
+ .debug_macro   0x0000000000024191      0x11c Application/User/main.o
+ .debug_macro   0x00000000000242ad      0x22c Application/User/main.o
+ .debug_macro   0x00000000000244d9       0x5b Application/User/main.o
+ .debug_macro   0x0000000000024534       0xa5 Application/User/main.o
+ .debug_macro   0x00000000000245d9       0xf3 Application/User/main.o
+ .debug_macro   0x00000000000246cc      0x199 Application/User/main.o
+ .debug_macro   0x0000000000024865      0x487 Application/User/main.o
+ .debug_macro   0x0000000000024cec      0x67e Application/User/main.o
+ .debug_macro   0x000000000002536a       0xa6 Application/User/main.o
+ .debug_macro   0x0000000000025410      0x3f1 Application/User/main.o
+ .debug_macro   0x0000000000025801       0x22 Application/User/main.o
+ .debug_macro   0x0000000000025823       0x52 Application/User/main.o
+ .debug_macro   0x0000000000025875       0xa5 Application/User/main.o
+ .debug_macro   0x000000000002591a       0x46 Application/User/main.o
+ .debug_macro   0x0000000000025960      0x352 Application/User/main.o
+ .debug_macro   0x0000000000025cb2      0x21a Application/User/main.o
+ .debug_macro   0x0000000000025ecc       0x16 Application/User/main.o
+ .debug_macro   0x0000000000025ee2       0x46 Application/User/main.o
+ .debug_macro   0x0000000000025f28      0x34d Application/User/main.o
+ .debug_macro   0x0000000000026275       0x25 Application/User/main.o
+ .debug_macro   0x000000000002629a       0xee Application/User/main.o
+ .debug_macro   0x0000000000026388       0x18 Application/User/main.o
+ .debug_macro   0x00000000000263a0       0x3c Application/User/main.o
+ .debug_macro   0x00000000000263dc       0x34 Application/User/main.o
+ .debug_macro   0x0000000000026410       0x52 Application/User/main.o
+ .debug_macro   0x0000000000026462       0x1f Application/User/main.o
+ .debug_macro   0x0000000000026481       0x43 Application/User/main.o
+ .debug_macro   0x00000000000264c4       0x20 Application/User/main.o
+ .debug_macro   0x00000000000264e4      0x1a3 Application/User/main.o
+ .debug_macro   0x0000000000026687      0x1e1 Application/User/main.o
+ .debug_macro   0x0000000000026868       0x22 Application/User/main.o
+ .debug_macro   0x000000000002688a       0x1c Application/User/main.o
+ .debug_macro   0x00000000000268a6      0x10b Application/User/main.o
+ .debug_macro   0x00000000000269b1       0x58 Application/User/main.o
+ .debug_macro   0x0000000000026a09       0x3d Application/User/main.o
+ .debug_macro   0x0000000000026a46      0x215 Application/User/stm32xx_it.o
+ .debug_macro   0x0000000000026c5b      0x203 Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_macro   0x0000000000026e5e       0x1c Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_macro   0x0000000000026e7a      0x1dc Drivers/CMSIS/system_stm32l5xx.o
+ .debug_macro   0x0000000000027056      0x20c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_macro   0x0000000000027262      0x1dc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_macro   0x000000000002743e      0x20f Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_macro   0x000000000002764d      0x1e8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_macro   0x0000000000027835      0x20c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_macro   0x0000000000027a41      0x206 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
 .comment        0x0000000000000000       0x7b
  .comment       0x0000000000000000       0x7b Application/User/main.o
@@ -21680,26 +21717,16 @@ OUTPUT(OpusProfilingTool.elf elf32-littlearm)
  .comment       0x000000000000007b       0x7c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
  .comment       0x000000000000007b       0x7c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
 
-.debug_frame    0x0000000000000000      0xe68
- .debug_frame   0x0000000000000000       0x40 Application/User/main.o
- .debug_frame   0x0000000000000040       0x60 Application/User/stm32xx_it.o
- .debug_frame   0x00000000000000a0      0x17c Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_frame   0x000000000000021c       0x30 Drivers/CMSIS/system_stm32l5xx.o
- .debug_frame   0x000000000000024c      0x28c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_frame   0x00000000000004d8      0x138 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_frame   0x0000000000000610      0x108 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_frame   0x0000000000000718      0x180 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_frame   0x0000000000000898      0x3a8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_frame   0x0000000000000c40      0x1dc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
- .debug_frame   0x0000000000000e1c       0x2c d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000000e48       0x20 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-memset.o)
-
-.debug_loc      0x0000000000000000     0x2b1e
- .debug_loc     0x0000000000000000      0x25d Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
- .debug_loc     0x000000000000025d       0xc6 Drivers/CMSIS/system_stm32l5xx.o
- .debug_loc     0x0000000000000323      0x2ad Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
- .debug_loc     0x00000000000005d0      0x574 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
- .debug_loc     0x0000000000000b44      0x335 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
- .debug_loc     0x0000000000000e79      0x749 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
- .debug_loc     0x00000000000015c2      0xacc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
- .debug_loc     0x000000000000208e      0xa90 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+.debug_frame    0x0000000000000000      0xec4
+ .debug_frame   0x0000000000000000       0x9c Application/User/main.o
+ .debug_frame   0x000000000000009c       0x60 Application/User/stm32xx_it.o
+ .debug_frame   0x00000000000000fc      0x17c Drivers/BSP/STM32L5xx_Nucleo/stm32l5xx_nucleo.o
+ .debug_frame   0x0000000000000278       0x30 Drivers/CMSIS/system_stm32l5xx.o
+ .debug_frame   0x00000000000002a8      0x28c Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal.o
+ .debug_frame   0x0000000000000534      0x138 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_cortex.o
+ .debug_frame   0x000000000000066c      0x108 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_gpio.o
+ .debug_frame   0x0000000000000774      0x180 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_icache.o
+ .debug_frame   0x00000000000008f4      0x3a8 Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_pwr_ex.o
+ .debug_frame   0x0000000000000c9c      0x1dc Drivers/STM32L5xx_HAL_Driver/stm32l5xx_hal_rcc.o
+ .debug_frame   0x0000000000000e78       0x2c d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000ea4       0x20 d:/stmcubemx studio/stm32cubeide_1.5.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main/fpv5-sp/hard\libc_nano.a(lib_a-memset.o)
