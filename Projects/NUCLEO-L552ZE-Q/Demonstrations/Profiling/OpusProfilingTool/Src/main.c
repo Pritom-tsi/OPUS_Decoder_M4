@@ -21,6 +21,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "cube_hal.h"
 #include "opus_interface.h"
+#include "D:\opus all\STM32CubeExpansion_OPUS_V1.0.0\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\Inc\foo.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
 //#include "stcmdp_manager.h" // commented out by Pritom
 //#include "uart_protocol_interface.h"// commented out by Pritom
 
@@ -36,6 +41,8 @@ static void ICACHE_Init(void);
 
 ENC_Opus_ConfigTypeDef EncConfigOpus;   /*!< opus encode configuration.*/
 DEC_Opus_ConfigTypeDef DecConfigOpus;   /*!< opus decode configuration.*/
+
+int DEC_Opus_Decode(uint8_t * buf_in, uint32_t len, uint8_t * buf_out) ;
 
 
 
@@ -53,13 +60,25 @@ DEC_Opus_ConfigTypeDef DecConfigOpus;   /*!< opus decode configuration.*/
 #define HYBRID_MODE     0x01
 #define CELT_MODE       0x02
 
-#define TMsg_MaxLen        24576   /*!< Message length */
+//#define MAXBUFLEN 10000
+
+char *source = NULL;
+char buff[];
+uint32_t decodedAudioInteger = 0;
+
+//#define TMsg_MaxLen        24576   /*!< Message length */
+#define TMsg_MaxLen speech_orig_opus_size
 typedef struct
 {
   uint32_t Len;                                 /*!< Message length           */
-  uint8_t Data[TMsg_MaxLen];                    /*!< Message data             */
+  uint8_t Data[];                    /*!< Message data             */
 } TMsg;
 
+
+
+/*TMsg *Msg= speech_orig_opus[TMsg_MaxLen];*/
+
+//TMsg= speech_orig_opus[speech_orig_opus_size];
 /* Exported types ------------------------------------------------------------*/
 typedef enum
 {
@@ -105,6 +124,83 @@ int main(void)
   /* Configure UART */
   //USARTConfig(); //commented out by Pritom
 
+
+/*  FILE *fp = fopen("D:\opus all\STM32CubeExpansion_OPUS_V1.0.0\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\Inc\foo.h", "rb");
+  if (fp != NULL) {
+      size_t newLen = fread(source, sizeof(char), MAXBUFLEN, fp);
+      if ( ferror( fp ) != 0 ) {
+         fputs("Error reading file", stderr);
+      } else {
+          source[newLen++] = '\0';  Just to be safe.
+      }
+
+      fclose(fp);
+  }*/
+
+
+  FILE *fp = fopen("D:\opus all\STM32CubeExpansion_OPUS_V1.0.0\Projects\NUCLEO-L552ZE-Q\Demonstrations\Profiling\OpusProfilingTool\Inc\foo.h", "r");
+  if (fp != NULL) {
+      /* Go to the end of the file. */
+      if (fseek(fp, 0L, SEEK_END) == 0) {
+          /* Get the size of the file. */
+          long bufsize = ftell(fp);
+          if (bufsize == -1) { /* Error */ }
+
+          /* Allocate our buffer to that size. */
+          source = malloc(sizeof(char) * (bufsize + 1));
+
+          /* Go back to the start of the file. */
+          if (fseek(fp, 0L, SEEK_SET) != 0) { /* Error */ }
+
+          /* Read the entire file into memory. */
+          size_t newLen = fread(source, sizeof(char), bufsize, fp);
+          if ( ferror( fp ) != 0 ) {
+              fputs("Error reading file", stderr);
+          } else {
+              source[newLen++] = '\0'; /* Just to be safe. */
+          }
+      }
+      fclose(fp);
+  }
+
+  free(source); /* Don't forget to call free() later! */
+
+  decodedAudioInteger=DEC_Opus_Decode((uint8_t*)source, sizeof(source), (uint8_t*)buff);
+
+  //converting it to binary by Pritom
+
+ /* if(numDecShort<2){
+
+	  numDecShort= numDecShort;
+  }
+  else{
+
+	  numDecShort= (numDecShort/2)*10 +numDecShort%2;
+  }
+*/
+
+  char hex[5];
+
+  sprintf(hex, "%x", decodedAudioInteger);
+  puts(hex);
+
+
+/*
+ File* in;
+ File* out;
+
+ out=fopen("point.bin","wb");
+
+ if (out==NULL){
+
+	return 1;
+ }
+
+ fwrite(numDecShort, sizeof(numDecShort),1);
+
+*/
+
+
   while (1)
   {
    // STCmdP_manager();
@@ -114,6 +210,25 @@ int main(void)
       led_toggle_count = 0;
       BSP_LED_Toggle(LED1);
     }*/
+
+
+	// InitOpusDecoder(TMsg *Msg);
+
+
+
+
+	// DEC_Opus_Decode((uint8_t*)source, (uint8_t*)sizeof(source), (uint8_t*)buff);
+
+
+
+
+
+
+
+
+
+
+
   }
 }
 
@@ -152,7 +267,7 @@ static void SystemClock_Config(void)
   }
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
@@ -369,6 +484,8 @@ OPT_StatusTypeDef EncDec_File_Request(TMsg *Msg)
 
   return OPT_SUCCESS;
 }
+
+
 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
